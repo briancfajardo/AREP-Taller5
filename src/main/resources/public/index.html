@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>Movie searcher</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="camera.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<p id="title">Operaciones Taller 5</p>
+<div id="cards">
+    <div class="search-input" id="search-input-get">
+        <form class="movieForm" id="movieForm-sin" action="/movie">
+            <label for="name-get">Seno:</label><br>
+            <input class="name" type="text" id="name-get" name="name" value=""><br><br>
+            <input class="toggle-button" type="button" id="toggle-button-get" value="Search" onclick="loadSinMsg();">
+        </form>
+        <div class="respmsg" id="sinrespmsg"></div>
+    </div>
+    <div class="search-input" id="search-input-cos">
+        <form class="movieForm" id="movieForm-cos" action="/cos">
+            <label for="name-cos">Coseno:</label><br>
+            <input class="name" type="text" id="name-cos" name="name" value=""><br><br>
+            <input class="toggle-button" type="button" id="toggle-button-cos" value="Search" onclick="loadCosMsg();">
+        </form>
+        <div class="respmsg" id="cosrespmsg"></div>
+    </div>
+    <div class="search-input" id="search-input-palindrome">
+        <form class="movieForm" id="movieForm-palindrome" action="/palindrome">
+            <label for="name-palindrome">Palindrome:</label><br>
+            <input class="name" type="text" id="name-palindrome" name="name" value=""><br><br>
+            <input class="toggle-button" type="button" id="toggle-button-palindrome" value="Search" onclick="loadPalindromeMsg();">
+        </form>
+        <div class="respmsg" id="palindromerespmsg"></div>
+    </div>
+    <div class="search-input" id="search-input-magnitud">
+        <form class="movieForm" id="movieForm-magnitud" action="/magnitud">
+            <label for="name-magnitud1">Magnitud:</label><br>
+            <input class="name" type="text" id="name-magnitud1" name="name" value=""><br><br>
+            <input class="name" type="text" id="name-magnitud2" name="name" value=""><br><br>
+            <input class="toggle-button" type="button" id="toggle-button-magnitud" value="Search" onclick="loadMagnitudMsg();">
+        </form>
+        <div class="respmsg" id="magnitudrespmsg"></div>
+    </div>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
